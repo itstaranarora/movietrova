@@ -1,0 +1,17 @@
+.cardContainer {
+    grid-column: 1/-1;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 1rem;
+} 
+
+@media (min-width: 940px) {
+    .cardContainer {
+        display: grid;
+        grid-column: 1/-1;
+        grid-template-columns: repeat(3,1fr);
+        margin: 5rem 10rem;
+    }
+}
