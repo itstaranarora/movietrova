@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
@@ -9,24 +9,24 @@ const Navbar = () => {
       <span className={styles.navbarToggle} onClick={() => document.getElementById('js-menu').classList.toggle(styles.active)}>
         <i className="material-icons">menu</i>
       </span>
-      <Link to="/" className={styles.logo}>
-        MovieFinder
-      </Link>
+      <NavLink exact to="/" className={styles.logo}>
+        Movietrova
+      </NavLink>
       <ul className={styles.mainNav} id="js-menu">
         <li>
-          <Link to="/" className={styles.navLinks}>
+          <NavLink exact to="/" activeClassName={styles.navLinksActive} className={styles.navLinks}>
             home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/about" className={styles.navLinks}>
+          <NavLink to="/about" activeClassName={styles.navLinksActive} className={styles.navLinks}>
             about
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/about" className={styles.navLinks}>
+          <a href="https://github.com" className={styles.navLinks}>
             github
-          </Link>
+          </a>
         </li>
       </ul>
       <div className={styles.search}>
