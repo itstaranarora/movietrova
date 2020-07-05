@@ -8,8 +8,8 @@ const Footer = () => {
             <Link to="/" className={styles.logo}> Movietrova </Link>
             <div className={styles.navContainer}>
                 <Link className={styles.navLinks} to="/about">about</Link>
-                <Link className={styles.navLinks} to="#">contact</Link>
-                <Link className={styles.navLinks} to="#">github</Link>
+                <a href="https://www.linkedin.com/in/taran-arora/" className={styles.navLinks} >contact</a>
+                <a href="https://github.com/itstaranarora" className={styles.navLinks} >github</a>
             </div>
             <span className={styles.credit}>Made with <span className="material-icons">favorite</span> by Taran Arora</span>
         </div>

@@ -8,13 +8,13 @@ const About = () => {
         <div className={styles.container}>
             <Navbar className={styles.navbar}/>
             <div className={styles.headingComponent}>
-                <h1 className={styles.pageTitle}>About Movietrova</h1>
+                <h1 className={styles.pageTitle}>About this site</h1>
                 <h2 className={styles.pageDiscription}>
-                    Movietrova helps you find ratings and reviews for the newest Movie and TV shows.
+                    Movietrova helps you find ratings and parental guide for the newest Movie and TV shows.
                 </h2>
             </div>
             <div className={styles.about}>
-                <p>Hey! Its Taran Arora, I'm the developer of Movietrova. it helps you find rating for the lastest Movies and TV shows. This Web App is build using React and TheMovieDB Api</p>
+                <p>Lets Face it. It is becoming harder  </p>
             </div>
             <Footer className={styles.footer}/>
         </div>

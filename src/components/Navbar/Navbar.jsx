@@ -24,7 +24,7 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <a href="https://github.com" className={styles.navLinks}>
+          <a href="https://github.com/itstaranarora" className={styles.navLinks}>
             github
           </a>
         </li>

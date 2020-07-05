@@ -9,7 +9,7 @@ const Home = () => {
 
     const [state,setState] = useState({
         movies: [],
-        search: "g",
+        search: "",
     })
 
     useEffect(() => {
@@ -19,9 +19,10 @@ const Home = () => {
 
       const search = (e) => {
           if (e.key === "Enter"){
-            fetchSearchResult(state.search).then(data => setState({...state,movies: data}))
+            if (state.search) fetchSearchResult(state.search).then(data => setState({...state,movies: data}))
           }
       }
+
 
     return(
         <div className={styles.container}>
@@ -29,7 +30,7 @@ const Home = () => {
             <div className={styles.headingComponent}>
                 <h1 className={styles.pageTitle}>Discover New Movies</h1>
                 <h2 className={styles.pageDiscription}>
-                    Find ratings and reviews for the newest movie and TV shows.
+                    Find ratings and parental guide for the newest movie and TV shows.
                 </h2>
                 <input type="search" onChange={(e) => setState({...state,search: e.target.value})} onKeyPress={search} className={styles.searchBar} placeholder="Search"/>
             </div>
