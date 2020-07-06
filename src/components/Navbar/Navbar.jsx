@@ -30,7 +30,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className={styles.search}>
-        <i className="material-icons"><a href="https://github.com/itstaranarora">code</a></i>
+        <i className="material-icons"><a href="https://github.com/itstaranarora/movietrova">code</a></i>
       </div>
     </nav>
   );
