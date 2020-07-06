@@ -2,8 +2,8 @@ import Axios from 'axios';
 const url = 'https://api.themoviedb.org/3/';
 const api = 'e7cb255c86f16a1298fc080124739f65';
 
-export const getImageSource = (path, width = 'w500/') => {
-  const image = path === null ? 'https://source.unsplash.com/CiUR8zISX60/500x300' : 'https://image.tmdb.org/t/p/' + width + path;
+export const getImageSource = (path) => {
+  const image = path === null ? 'https://source.unsplash.com/CiUR8zISX60/500x300' : 'https://image.tmdb.org/t/p/w780/' + path;
   return image;
 }
 

@@ -14,8 +14,6 @@ const Movie = () => {
         fetchMovieById(id).then(data => setFilm(data))
     }, [id])
 
-    console.log(film)
-
     const listContent = (label) => {
         return film.parentalData && film.parentalData.filter(data => data.label === label).map(data => data.items.map(item => <li key={item.id}>{item.text}</li>))   
     }
@@ -45,7 +43,7 @@ const Movie = () => {
                         <h3>{ film.vote_average ? film.release_date.slice(0,4) : null }</h3>
                     </div>
                 </div>
-                <img className={styles.img} src={ getImageSource(film.backdrop_path, 'w780/') }  alt={film.title}/>
+                <img className={styles.img} src={ getImageSource(film.backdrop_path) }  alt={film.title}/>
                 <div className={styles.genres}>
                     <h2>Geners</h2>
                     <div className={styles.genresNames}>

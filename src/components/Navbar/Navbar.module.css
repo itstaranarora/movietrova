@@ -68,12 +68,17 @@
     flex: 1;
   }
 
+  .search a {
+    text-decoration: none;
+    color: #b3c0ce;
+  }
+
   .search i {
     font-size: 1.7rem;
     cursor: pointer;
   }
 
-  .search i:hover {
+  .search a:hover {
     color: #196db6;
   }
 

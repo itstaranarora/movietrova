@@ -24,13 +24,13 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <a href="https://github.com/itstaranarora" className={styles.navLinks}>
-            github
+          <a href="https://www.linkedin.com/in/taran-arora/" className={styles.navLinks}>
+            contact
           </a>
         </li>
       </ul>
       <div className={styles.search}>
-        <i className="material-icons">info</i>
+        <i className="material-icons"><a href="https://github.com/itstaranarora">code</a></i>
       </div>
     </nav>
   );
