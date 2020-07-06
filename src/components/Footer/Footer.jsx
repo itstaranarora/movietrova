@@ -11,7 +11,7 @@ const Footer = () => {
                 <a href="https://www.linkedin.com/in/taran-arora/" className={styles.navLinks} >contact</a>
                 <a href="https://github.com/itstaranarora" className={styles.navLinks} >github</a>
             </div>
-            <span className={styles.credit}>Made with <span className="material-icons">favorite</span> by Taran Arora</span>
+            <span className={styles.credit}>Built with <span className="material-icons">favorite</span> by Taran Arora</span>
         </div>
     );
 }
